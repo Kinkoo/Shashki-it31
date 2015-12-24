@@ -1,0 +1,12 @@
+<script> 
+function preload() { 
+this.length = preload.arguments.length; 
+for (var i = 0; i < this.length; i++) { 
+this[i] = new Image(); 
+this[i].src = preload.arguments[i];}} 
+var pics = new preload("black.gif","gray.gif", 
+"you1.gif","you2.gif","you1k.gif","you2k.gif", 
+"me1.gif","me2.gif","me1k.gif","me2k.gif"); 
+var black = -1; var red = 1; var square_dim = 45; var piece_toggled = false; var my_turn = false; 
+var double_jump = false; var comp_move = false; var game_is_over = false; var safe_from = safe_to = null; 
+var toggler = null;var togglers = 0; 
